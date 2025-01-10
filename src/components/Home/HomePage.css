@@ -1,0 +1,165 @@
+/* HomePage.css */
+
+/* General Styling */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url('/0Wonwb.webp');
+}
+
+.welcome-section {
+  
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  background-attachment: fixed;
+}
+
+.welcome-section h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.welcome-section h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: 300;
+  
+}
+
+.categories-section {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin: 30px auto;
+  color: rgb(192, 16, 16);
+}
+
+.categories-section h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure proper wrapping */
+  gap: 15px; /* Adjust gap for consistent spacing */
+}
+
+.categories-list li {
+  flex: 1 1 auto; /* Allow items to size appropriately */
+}
+
+.categories-list a {
+  display: block;
+  background-color: #3498db;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center; /* Center text within each button */
+}
+
+.categories-list a:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.add-book-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: rgb(247, 247, 247);
+  
+}
+
+.add-book-section h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #2c3e50;
+  
+}
+
+.add-book-section p {
+  font-size: 1.8rem;
+  color: #edf0ed;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #2c3e50;
+}
+
+.add-book-btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-book-btn:hover {
+  background-color: #27ae60;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0; /* Remove any extra margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-section h1 {
+    font-size: 3rem;
+  }
+
+  .categories-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .categories-list a {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+
+  .add-book-btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+}

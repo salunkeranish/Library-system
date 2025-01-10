@@ -1,0 +1,47 @@
+.add-book {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-book h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.add-book form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-book label {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.add-book input,
+.add-book textarea {
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-book button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-book button:hover {
+  background-color: #2980b9;
+}
